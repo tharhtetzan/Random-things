@@ -1,0 +1,156 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+:root{
+	--bgcolor: #0A0B0A;
+	--glowvar: #fff;
+	--b1color: #F3FF00;
+	--b2color: #4DFF00;
+	--b3color: #FF4D00;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: var(--bgcolor);
+}
+
+h2{
+	text-align: center;
+	font-size: 6em;
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	-webkit-box-reflect:below 1px linear-gradient(transparent,#0004);
+	line-height: 0.70em;
+	outline: none;
+	text-shadow: 0 0 10px var(--glowvar),
+	0 0 20px var(--glowvar),
+	0 0 40px var(--glowvar),
+	0 0 60px var(--glowvar);
+	animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+	0%,18%,20%,50.1%,65.1%,70%,80%,90.1%,92%
+	{
+		color: #fff;
+		text-shadow:0 0 10px var(--glowvar),
+	0 0 20px var(--glowvar),
+	0 0 40px var(--glowvar);
+	}
+	18.1%,20.1%,30%,50%,60.1%,65%,70.1%,80.1%,90%,92.1%,100%{
+		color: #fff;
+		text-shadow:0 0 10px var(--glowvar),
+	0 0 20px var(--glowvar),
+	0 0 40px var(--glowvar),
+	0 0 60px var(--glowvar);
+	}
+}
+
+.container{
+	text-align: center;
+}
+
+.text-container{
+	padding-bottom: 80px;
+}
+
+.button-container{
+
+}
+
+button
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: var(--bgcolor);
+	border: 2px solid black;
+	height: 100px;
+	width:100px;
+	border-radius: 50%;
+	box-shadow: 0 0 15px black;
+	color: #fff;
+	text-shadow: 0 0 10px #fff,
+	0 0 20px #FFF;
+}
+
+.button1:hover
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: var(--bgcolor);
+	border: 2px solid var(--b1color);
+	height: 100px;
+	width:100px;
+	border-radius: 50%;
+	box-shadow: 0 -10px 15px rgba(243,255,0,0.2),
+	inset 0 -10px 15px rgba(243,255,0,0.2),
+	0 10px 15px rgba(0,0,0,0.3),
+	inset 0 10px 15px rgba(0,0,0,0.3);
+	color: var(--b1color);
+	text-shadow:0 0 69px var(--b1color);
+	transition: 0.5s;
+}
+
+.button2:hover
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: var(--bgcolor);
+	border: 2px solid var(--b2color);
+	height: 100px;
+	width:100px;
+	border-radius: 50%;
+	box-shadow: 0 -10px 15px rgba(77,255,0,0.2),
+	inset 0 -10px 15px rgba(77,255,0,0.2),
+	0 10px 15px rgba(0,0,0,0.3),
+	inset 0 10px 15px rgba(0,0,0,0.3);
+	color: var(--b2color);
+	text-shadow:0 0 69px var(--b2color);
+	transition: 0.5s;
+}
+
+.button3:hover
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: var(--bgcolor);
+	border: 2px solid var(--b3color);
+	height: 100px;
+	width:100px;
+	border-radius: 50%;
+	box-shadow: 0 -10px 15px rgba(255,77,0,0.2),
+	inset 0 -10px 15px rgba(255,77,0,0.2),
+	0 10px 15px rgba(0,0,0,0.3),
+	inset 0 10px 15px rgba(0,0,0,0.3);
+	color: var(--b3color);
+	text-shadow:0 0 69px var(--b3color);
+	transition: 0.5s;
+}
+
+.active
+{
+	font-size: 1em;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: var(--bgcolor);
+	border: 5px solid var(--glowvar);
+	height: 100px;
+	width:100px;
+	border-radius: 50%;
+	box-shadow:
+	0 10px 15px rgba(0,0,0,0.3),
+	inset 0 10px 15px rgba(0,0,0,0.3);
+	color: var(--glowvar);
+	text-shadow:0 0 69px var(--glowvar);
+	transition: 0.5s;
+}
