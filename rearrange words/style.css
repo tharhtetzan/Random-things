@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Merriweather&family=Permanent+Marker&family=Roboto+Mono:wght@500&family=Ubuntu:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2em;
+
+	font-family: 'Comfortaa', cursive;
+	font-family: 'Merriweather', serif;
+	font-family: 'Permanent Marker', cursive;
+	font-family: 'Roboto Mono', monospace;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+	width: 100vw;
+}
+
+h1{
+	position: absolute;
+	top: 20vh;
+}
+
+.gameArea{
+	display: flex;
+	justify-content: center;
+}
+
+.answerBox input{
+	background-color: grey;
+	color: white;
+	text-align: center;
+	font-size: 1em;
+	height: 75px;
+	width: 75px;
+	margin: 0 5px;
+	z-index: -5;
+}
+
+.wrongBox{
+	margin: 10px 0;
+}
+
+.wrongBox button{
+	text-align: center;
+	font-size: 1em;
+	margin: 0 5px;
+	height: 75px;
+	width: 75px;
+}
+
+#randomWord{
+	text-align: center;
+	margin: 10px 0;
+	letter-spacing: 10px;
+}
